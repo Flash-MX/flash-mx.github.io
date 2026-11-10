@@ -1,0 +1,52 @@
+# Deploy the website to GitHub Pages.
+#
+# The site is assembled from two branches:
+#   main         site content (home, about, ...) with normal git history
+#   dev-results  only dev/ (latest test results); force-pushed by the Flash-MX
+#                container-run workflow, so it has no history
+# dev/ is never tracked on main. Pages must be set to deploy from "GitHub Actions"
+# (Settings -> Pages -> Source).
+name: deploy
+
+on:
+  push:
+    branches: [main, dev-results]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - name: Add latest test results (dev/)
+        run: |
+          if git clone -q --depth 1 --branch dev-results --single-branch \
+               "${{ github.server_url }}/${{ github.repository }}" devres; then
+            cp -a devres/dev site/dev
+          else
+            echo "No dev-results branch yet; deploying without dev/."
+          fi
+          rm -rf site/.git site/.github
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
