@@ -4,13 +4,17 @@
 #   main         site content (home, about, ...) with normal git history
 #   dev-results  only dev/ (latest test results); force-pushed by the Flash-MX
 #                container-run workflow, so it has no history
+#
+# This workflow lives on main, so it runs when main is pushed or when it is
+# dispatched on main. Pushing dev-results alone cannot start it; the Flash-MX
+# workflow dispatches it after each results push.
 # dev/ is never tracked on main. Pages must be set to deploy from "GitHub Actions"
 # (Settings -> Pages -> Source).
 name: deploy
 
 on:
   push:
-    branches: [main, dev-results]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
