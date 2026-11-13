@@ -1,0 +1,1 @@
+env  mpirun -n 3 /home/mount/FlashX/TestResults/container/2026-11-13/UnitTest_RisingBubble_AMReX_2d/flash-exe -par_file test_default.par

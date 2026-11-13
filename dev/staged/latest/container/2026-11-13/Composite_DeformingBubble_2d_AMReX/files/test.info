@@ -1,0 +1,13 @@
+container/Composite/DeformingBubble/2d/AMReX
+
+setupName: incompFlow/DeformingBubble
+nodeName: Composite/DeformingBubble/2d/AMReX
+setupOptions: -auto -2d -nxb=16 -nyb=16 +amrex -maxblocks=150 +parallelIO +incomp
+numProcs: 4
+parfiles: <pathToSimulations>/incompFlow/DeformingBubble/tests/test_divfree.par
+restartParfiles: <pathToSimulations>/incompFlow/DeformingBubble/tests/test_divfree_restart.par
+checkpointBasename: flashx_hdf5_chk_
+comparisonNumber: 0001
+comparisonBenchmark: <siteDir>/2026-06-20/<buildDir>/<runDir>/<checkpointBasename><comparisonNumber>
+restartNumber: 0002
+restartBenchmark: <siteDir>/2026-06-20_2/<buildDir>/<runDir>/<checkpointBasename><restartNumber>

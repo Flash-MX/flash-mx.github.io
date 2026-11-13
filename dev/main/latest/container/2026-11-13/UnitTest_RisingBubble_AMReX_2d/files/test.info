@@ -1,0 +1,7 @@
+container/UnitTest/RisingBubble/AMReX/2d
+
+setupName: incompFlow/RisingBubble
+nodeName: UnitTest/RisingBubble/AMReX/2d
+setupOptions: -auto -2d -nxb=16 -nyb=16 +amrex +noio -maxblocks=100 +incomp InsForceInOut=False
+numProcs: 3
+parfiles: <pathToSimulations>/incompFlow/RisingBubble/tests/test_default.par

@@ -1,0 +1,40 @@
+Processing Shortcut file: /home/mount/FlashX/bin/setup_shortcuts.txt
+checking for needed files and directories
+    using site directory for site container
+generating default Units file
+    Driver/DriverMain
+    Grid/GridBoundaryConditions
+    Grid/GridMain/AMR/Amrex/levelFlux
+    Grid/GridSolvers/AmrexMultigridSolver
+    Grid/localAPI
+    RuntimeParameters/RuntimeParametersMain
+    Simulation/SimulationMain/unitTest/Laplacian/Amrex
+    TimeAdvance/TimeAdvanceMain
+    flashUtilities/contiguousConversion
+    flashUtilities/general
+    flashUtilities/interpolation/oneDim
+    flashUtilities/nameValueLL
+    flashUtilities/system/memoryUsage/legacy
+    monitors/Logfile/LogfileMain
+    monitors/Timers/TimersMain/MPINative
+scanning /home/mount/FlashX/object/Units file for included units
+    Driver/DriverMain
+    Grid/GridBoundaryConditions
+    Grid/GridMain/AMR/Amrex/levelFlux
+    Grid/GridSolvers/AmrexMultigridSolver
+    Grid/localAPI
+    RuntimeParameters/RuntimeParametersMain
+    Simulation/SimulationMain/unitTest/Laplacian/Amrex
+    TimeAdvance/TimeAdvanceMain
+    flashUtilities/contiguousConversion
+    flashUtilities/general
+    flashUtilities/interpolation/oneDim
+    flashUtilities/nameValueLL
+    flashUtilities/system/memoryUsage/legacy
+    monitors/Logfile/LogfileMain
+    monitors/Timers/TimersMain/MPINative
+Computing default values for options not specified on command line
+Using Makefile.h: /home/mount/FlashX/sites/container/Makefile.h
+generating Makefile
+Copying data files: 1 copied
+SUCCESS

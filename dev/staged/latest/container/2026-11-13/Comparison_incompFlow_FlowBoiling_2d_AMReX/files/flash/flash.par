@@ -1,0 +1,81 @@
+# The content below is programmatically generated from tomlfile. Copy before editing.
+
+# Runtime parameters for Heater
+htr_heaterName = "flow_boiling"
+htr_numHeaters = 2
+htr_nucSeedRadius = 0.01
+
+# Runtime parameters for Logfile
+run_comment = "Flow Boiling problem"
+log_file = "INS_Flow_Boiling.log"
+
+# Runtime parameters for Grid
+geometry = "cartesian"
+xmin = -30.0
+xmax = 30.0
+ymin = 0.0
+ymax = 2.5
+xl_boundary_type = "inflow_ins"
+xr_boundary_type = "outflow_ins"
+yl_boundary_type = "noslip_ins"
+yr_boundary_type = "noslip_ins"
+gr_amrexMG_composite_solve = .TRUE.
+gr_amrexMG_Tol = 5e-12
+gr_amrexMG_max_iter = 200
+nblockx = 120
+nblocky = 5
+nrefs = 10000000
+lrefine_min = 1
+lrefine_max = 1
+flux_correct = .TRUE.
+enableMaskedGCFill = .TRUE.
+
+# Runtime parameters for IncompNS
+ins_invReynolds = 0.0042
+ins_inflowVelScale = 1.0
+ins_gravY = -1.0
+ins_cflFlg = 1
+ins_cfl = 0.2
+ins_sigma = 0.05
+ins_dtSpec = 1e-05
+ins_pressureCorrect = .FALSE.
+ins_intSchm = 2
+ins_advSchm = 2
+
+# Runtime parameters for Outlet
+out_buffer = 1.0
+
+# Runtime parameters for Simulation
+sim_lengthScaleMeters = 0.001
+sim_timeScaleSeconds = 0.01
+
+# Runtime parameters for Multiphase
+mph_rhoGas = 0.0083
+mph_muGas = 1.0
+mph_iPropSmear = 1.5
+mph_invWeber = 1.0
+mph_thcoGas = 0.25
+mph_CpGas = 0.83
+mph_Stefan = 0.5298
+mph_Tsat = 0.15
+
+# Runtime parameters for HeatAD
+ht_Prandtl = 1.0
+
+# Runtime parameters for Driver
+restart = .FALSE.
+nend = 100
+tmax = 100
+dtinit = 1e-05
+dtmax = 0.0004
+tstep_change_factor = 1.01
+
+# Runtime parameters for IO
+checkpointFileNumber = 0
+plotFileNumber = 0
+plot_var_1 = "pres"
+plot_var_2 = "velx"
+plot_var_3 = "vely"
+plot_var_4 = "dfun"
+plot_var_5 = "temp"
+ignoreForcedPlot = .TRUE.

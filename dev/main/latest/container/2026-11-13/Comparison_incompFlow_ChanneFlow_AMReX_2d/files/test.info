@@ -1,0 +1,8 @@
+container/Comparison/incompFlow/ChanneFlow/AMReX/2d
+
+setupName: incompFlow/ChannelFlow
+nodeName: Comparison/incompFlow/ChanneFlow/AMReX/2d
+setupOptions: -auto -maxblocks=100 +amrex +parallelIO -2d -nxb=16 -nyb=16 +incomp
+numProcs: 4
+parfiles: <pathToSimulations>/incompFlow/ChannelFlow/tests/test_periodic_bc.par
+shortPathToBenchmark: <siteDir>/2026-06-20/<buildDir>/<runDir>/<chkMax>

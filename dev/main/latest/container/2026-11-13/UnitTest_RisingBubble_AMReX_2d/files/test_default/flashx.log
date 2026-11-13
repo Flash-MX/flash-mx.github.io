@@ -1,0 +1,415 @@
+ FLASH log file:  11-13-2026  01:47:06.981    Run number:  1
+ ==============================================================================
+ Number of MPI tasks:                  3
+ MPI version:                          3
+ MPI subversion:                       1
+ Dimensionality:                       2
+ Max Number of Blocks/Proc:          100
+ Number x zones:                      16
+ Number y zones:                      16
+ Number z zones:                       1
+ Setup stamp:     Fri Nov 13 01:46:52 2026
+ Build stamp:     Fri Nov 13 01:46:57 2026
+ System info:     Linux 86c906e79b04 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18
+ Version:         Flash-X 1.0 (heads/main-0-g5db4254f)                                            
+ Build directory: /home/mount/FlashX/object
+ Setup syntax:    /home/mount/FlashX/bin/setup.py incompFlow/RisingBubble -site=container -auto -2d -nxb=16 -nyb=16 +amrex +noio -maxblocks=100 +incomp InsForceInOut=False
+ f compiler flags: h5pfc -I/home/lib/amrex/2D/include -c -O2 -fdefault-real-8 -fdefault-double-8 -Wuninitialized -ffree-line-length-none -DHAVE_MPI_MODULE -Wno-argument-mismatch -fallow-argument-mismatch -DINDEXREORDER -DMAXBLOCKS=100 -DNXB=16 -DNYB=16 -DNZB=1 -DN_DIM=2
+ c compiler flags:    h5pcc -I/home/lib/amrex/2D/include -c -O2 -Wuninitialized -D_FORTIFY_SOURCE=2 -DINDEXREORDER -DMAXBLOCKS=100 -DNXB=16 -DNYB=16 -DNZB=1 -DN_DIM=2
+ ==============================================================================
+ Comment:  Rising Bubble problem
+ ==============================================================================
+ FLASH Units used:
+   Driver/DriverMain/Incomp
+   Grid/GridBoundaryConditions
+   Grid/GridMain/AMR/Amrex/Incomp
+   Grid/GridMain/AMR/Amrex/levelFlux
+   Grid/GridSolvers/AmrexMultigridSolver
+   Grid/localAPI
+   RuntimeParameters/RuntimeParametersMain
+   Simulation/SimulationMain/incompFlow/RisingBubble
+   TimeAdvance/TimeAdvanceMain
+   flashUtilities/contiguousConversion
+   flashUtilities/general
+   flashUtilities/interpolation/oneDim
+   flashUtilities/nameValueLL
+   flashUtilities/system/memoryUsage/legacy
+   monitors/Logfile/LogfileMain
+   monitors/Timers/TimersMain/MPINative
+   numericalTools/Stencils/StencilsAdvection
+   numericalTools/Stencils/StencilsDiffusion
+   numericalTools/Stencils/StencilsLevelset
+   numericalTools/Stencils/StencilsMain
+   numericalTools/Stencils/StencilsTemporal
+   physics/IncompNS/IncompNSExtras
+   physics/IncompNS/IncompNSMain/varDens/presPoisson
+   physics/IncompNS/localAPI
+   physics/Multiphase/MultiphaseMain
+   physics/Multiphase/localAPI
+ ==============================================================================
+ RuntimeParameters:
+                                                                               
+ ==============================================================================
+bndpriorityone              =          1
+bndprioritythree            =          3
+bndprioritytwo              =          2
+dr_abortpause               =          2
+dr_dtminbelowaction         =          1
+drift_break_inst            =          0
+drift_trunc_mantissa        =          2
+drift_verbose_inst          =          0
+gr_amrexmg_cg_verbose       =          0
+gr_amrexmg_linop_maxorder   =          2
+gr_amrexmg_max_fmg_iter     =          0
+gr_amrexmg_max_grid_size    =         16
+gr_amrexmg_max_iter         =        200 [CHANGED]
+gr_amrexmg_max_level        =          1
+gr_amrexmg_n_cell           =         32
+gr_amrexmg_prob_type        =          1
+gr_amrexmg_ref_ratio        =          2
+gr_amrexmg_verbose          =          2
+gr_amrex_verbosity          =          1
+gr_lrefmaxtimevalue_1       =         -1
+gr_lrefmaxtimevalue_10      =         -1
+gr_lrefmaxtimevalue_11      =         -1
+gr_lrefmaxtimevalue_12      =         -1
+gr_lrefmaxtimevalue_13      =         -1
+gr_lrefmaxtimevalue_14      =         -1
+gr_lrefmaxtimevalue_15      =         -1
+gr_lrefmaxtimevalue_16      =         -1
+gr_lrefmaxtimevalue_17      =         -1
+gr_lrefmaxtimevalue_18      =         -1
+gr_lrefmaxtimevalue_19      =         -1
+gr_lrefmaxtimevalue_2       =         -1
+gr_lrefmaxtimevalue_20      =         -1
+gr_lrefmaxtimevalue_3       =         -1
+gr_lrefmaxtimevalue_4       =         -1
+gr_lrefmaxtimevalue_5       =         -1
+gr_lrefmaxtimevalue_6       =         -1
+gr_lrefmaxtimevalue_7       =         -1
+gr_lrefmaxtimevalue_8       =         -1
+gr_lrefmaxtimevalue_9       =         -1
+gr_restrictallmethod        =          3
+gr_sanitizedatamode         =          0
+gr_tilesizex                =         16
+gr_tilesizey                =         16
+gr_tilesizez                =          1
+iprocs                      =          1
+ins_advschm                 =        105
+ins_cflflg                  =          0 [CHANGED]
+ins_intschm                 =          2
+ins_isgs                    =          0
+ins_velprolongmethod        =          1
+interpol_order              =          2
+jprocs                      =          1
+kprocs                      =          1
+lrefine_del                 =          0
+lrefine_max                 =          1
+lrefine_min                 =          1
+max_particles_per_blk       =        100
+meshcopycount               =          1
+min_particles_per_blk       =          1
+mph_extpit                  =          5
+mph_lsit                    =          2
+nbegin                      =          1
+nblockx                     =          2 [CHANGED]
+nblocky                     =          3 [CHANGED]
+nblockz                     =          2 [CHANGED]
+nend                        =       3000 [CHANGED]
+nrefs                       =          2
+nsteptotalsts               =          5
+refine_var_count            =          4
+sweeporder                  =        123
+derefine_cutoff_1           =                 0.200E+00
+derefine_cutoff_2           =                 0.200E+00
+derefine_cutoff_3           =                 0.200E+00
+derefine_cutoff_4           =                 0.200E+00
+dr_dtmincontinue            =                 0.000E+00
+dr_tstepslowstartfactor     =                 0.100E+00
+dtinit                      =                 0.500E-03 [CHANGED]
+dtmax                       =                 0.100E+06
+dtmin                       =                 0.100E-09
+gr_amrexmg_tol              =                 0.100E-12 [CHANGED]
+gr_btworkchildscaling       =                 0.100E+01
+gr_btworkdefaultleaf        =                 0.200E+01
+gr_btworkdefaultpar         =                 0.100E+01
+gr_btworklbleaf             =                 0.000E+00
+gr_btworklbpar              =                 0.000E+00
+gr_btworkubleaf             =                 0.100E+07
+gr_btworkubpar              =                 0.100E+07
+gr_lrefinemaxredlogbase     =                 0.100E+02
+gr_lrefinemaxredradiusfact  =                 0.000E+00
+gr_lrefinemaxredtref        =                 0.000E+00
+gr_lrefinemaxredtimescale   =                 0.100E+01
+gr_lrefmaxtime_1            =                -0.100E+01
+gr_lrefmaxtime_10           =                -0.100E+01
+gr_lrefmaxtime_11           =                -0.100E+01
+gr_lrefmaxtime_12           =                -0.100E+01
+gr_lrefmaxtime_13           =                -0.100E+01
+gr_lrefmaxtime_14           =                -0.100E+01
+gr_lrefmaxtime_15           =                -0.100E+01
+gr_lrefmaxtime_16           =                -0.100E+01
+gr_lrefmaxtime_17           =                -0.100E+01
+gr_lrefmaxtime_18           =                -0.100E+01
+gr_lrefmaxtime_19           =                -0.100E+01
+gr_lrefmaxtime_2            =                -0.100E+01
+gr_lrefmaxtime_20           =                -0.100E+01
+gr_lrefmaxtime_3            =                -0.100E+01
+gr_lrefmaxtime_4            =                -0.100E+01
+gr_lrefmaxtime_5            =                -0.100E+01
+gr_lrefmaxtime_6            =                -0.100E+01
+gr_lrefmaxtime_7            =                -0.100E+01
+gr_lrefmaxtime_8            =                -0.100E+01
+gr_lrefmaxtime_9            =                -0.100E+01
+ins_cfl                     =                 0.300E+00 [CHANGED]
+ins_dpdx                    =                 0.000E+00
+ins_dpdy                    =                 0.000E+00
+ins_dpdz                    =                 0.000E+00
+ins_dtspec                  =                 0.500E-03 [CHANGED]
+ins_gravx                   =                 0.000E+00
+ins_gravy                   =                -0.100E+01 [CHANGED]
+ins_gravz                   =                 0.000E+00
+ins_inflowvelscale          =                 0.100E+01
+ins_invreynolds             =                 0.100E-01 [CHANGED]
+ins_sigma                   =                 0.200E+00 [CHANGED]
+mph_cpgas                   =                 0.100E+01
+mph_stefan                  =                 0.100E+01
+mph_tsat                    =                 0.000E+00
+mph_ipropsmear              =                 0.100E+01
+mph_invweber                =                 0.100E-01 [CHANGED]
+mph_mugas                   =                 0.100E+00 [CHANGED]
+mph_prestol                 =                 0.000E+00
+mph_rhogas                  =                 0.500E-02 [CHANGED]
+mph_scalargradx             =                 0.000E+00
+mph_scalargrady             =                 0.000E+00
+mph_scalargradz             =                 0.000E+00
+mph_temptol                 =                 0.100E-01
+mph_thcogas                 =                 0.100E+01
+nusts                       =                 0.100E+00
+refine_cutoff_1             =                 0.800E+00
+refine_cutoff_2             =                 0.800E+00
+refine_cutoff_3             =                 0.800E+00
+refine_cutoff_4             =                 0.800E+00
+refine_filter_1             =                 0.100E-01
+refine_filter_2             =                 0.100E-01
+refine_filter_3             =                 0.100E-01
+refine_filter_4             =                 0.100E-01
+sim_bubbleradius            =                 0.250E+00
+sim_lengthscalemeters       =                 0.100E+01
+sim_timescaleseconds        =                 0.100E+01
+small                       =                 0.100E-09
+smalle                      =                 0.100E-09
+smallp                      =                 0.100E-09
+smallt                      =                 0.100E-09
+smallu                      =                 0.100E-09
+smallx                      =                 0.100E-09
+smlrho                      =                 0.100E-09
+tinitial                    =                 0.000E+00
+tmax                        =                 0.100E+03 [CHANGED]
+tstep_change_factor         =                 0.100E+01 [CHANGED]
+wall_clock_time_limit       =                 0.605E+06
+x_refine_center             =                 0.000E+00
+xmax                        =                 0.100E+01
+xmin                        =                -0.100E+01 [CHANGED]
+y_refine_center             =                 0.000E+00
+ymax                        =                 0.200E+01 [CHANGED]
+ymin                        =                -0.100E+01 [CHANGED]
+zfinal                      =                 0.000E+00
+zinitial                    =                -0.100E+01
+z_refine_center             =                 0.000E+00
+zmax                        =                 0.100E+01
+zmin                        =                -0.100E+01 [CHANGED]
+amrexfaceinterpolator       = FACE_LINEAR                   
+amrexinterpolator           = CELL_CONSERVATIVE_LINEAR      
+basenm                      = flashx_                       
+geometry                    = cartesian                     
+log_file                    = flashx.log                    
+plot_var_1                  = pres                           [CHANGED]
+plot_var_10                 = none                          
+plot_var_11                 = none                          
+plot_var_12                 = none                          
+plot_var_13                 = none                          
+plot_var_14                 = none                          
+plot_var_15                 = none                          
+plot_var_16                 = none                          
+plot_var_17                 = none                          
+plot_var_2                  = velx                           [CHANGED]
+plot_var_3                  = vely                           [CHANGED]
+plot_var_4                  = dfun                           [CHANGED]
+plot_var_5                  = none                          
+plot_var_6                  = none                          
+plot_var_7                  = none                          
+plot_var_8                  = none                          
+plot_var_9                  = none                          
+refine_var_1                = none                          
+refine_var_2                = none                          
+refine_var_3                = none                          
+refine_var_4                = none                          
+run_comment                 = Rising Bubble problem          [CHANGED]
+run_number                  = 1                             
+sim_tempscaleexpr           = T_DELTA*T + T_BULK            
+xl_boundary_type            = noslip_ins                     [CHANGED]
+xr_boundary_type            = noslip_ins                     [CHANGED]
+yl_boundary_type            = noslip_ins                     [CHANGED]
+yr_boundary_type            = outflow_ins                    [CHANGED]
+zl_boundary_type            = noslip_ins                     [CHANGED]
+zr_boundary_type            = noslip_ins                     [CHANGED]
+csvsummaryallprocs          =  F
+logsummaryallprocs          =  F
+allowdtstsdominate          =  F
+converttoconsvdformeshcalls =  F
+converttoconsvdinmeshinterp =  F
+dr_printtsteploc            =  T
+dr_rununittest              =  T [CHANGED]
+dr_shortenlaststepbeforetmax =  F
+drift_tuples                =  F
+eachprocwritesownabortlog   =  F
+eachprocwritessummary       =  F
+earlyblockdistadjustment    =  T
+enablemaskedgcfill          =  F [CHANGED]
+flux_correct                =  T
+flux_correct_perlevel       =  T
+geometryoverride            =  F
+gr_amrexmg_agglomeration    =  T
+gr_amrexmg_composite_solve  =  T [CHANGED]
+gr_amrexmg_consolidation    =  T
+gr_amrexusebittree          =  F
+gr_bcenableapplymixedgds    =  F
+gr_bndgcfillneedsprimitivevars =  F
+gr_btcustomwork             =  F
+gr_btexchangework           =  F
+gr_btsortbywork             =  T
+gr_enabletiling             =  F
+gr_gcfillsinglevarrange     =  F
+gr_lrefinemaxbytime         =  F
+gr_lrefinemaxreddobylogr    =  F
+gr_lrefinemaxreddobytime    =  F
+gr_usetiling                =  F
+ins_pressurecorrect         =  F
+reducegcellfills            =  F
+refine_on_particle_count    =  F
+restart                     =  F
+ta_useasyncgrav             =  F
+threadblocklistbuild        =  F
+threaddriverblocklist       =  F
+threaddriverwithinblock     =  F
+threadraytracebuild         =  F
+threadwithinblockbuild      =  F
+tmr_suppressinparallel      =  F
+unbiased_geometry           =  F
+useheatad                   =  F
+useheater                   =  F
+useimbound                  =  F
+useincompns                 =  T
+useinlet                    =  F
+usemultiphase               =  T
+useorchestration            =  F
+useoutlet                   =  F
+useparticles                =  F
+usests                      =  F
+usestsfordiffusion          =  F
+usesolidmechanics           =  F
+writestatsummary            =  T
+                                                                               
+ ==============================================================================
+                                                                               
+ WARNING: Ignored Parameters :
+ These parameters were found in the flash.par file, but they were
+ not declared in any Config file for the simulation!
+                                                                               
+ out_buffer
+ checkpointFileIntervalTime
+ checkpointFileIntervalStep
+ plotFileIntervalTime
+ plotFileIntervalStep
+ nfres
+ gr_hyprePrintSolveInfo
+ gr_hyprePcType
+ gr_hypreSolverType
+ gr_hypreRelTol
+ gr_hypreFloor
+                                                                               
+ ==============================================================================
+                                                                               
+ ==============================================================================
+                                                                               
+                                                                               
+ ==============================================================================
+ [ 11-13-2026  01:47:06.982 ] [gr_initGeometry] checking BCs for idir: 1
+ [ 11-13-2026  01:47:06.982 ] [gr_initGeometry] checking BCs for idir: 2
+ [ 11-13-2026  01:47:06.982 ] [gr_amrexInit]: AMREX_GIT_VERSION=23.11
+ WARNING : Adaptive Grid did not find any variable to refine
+ [ 11-13-2026  01:47:06.988 ] [gr_initNewLevelCallback] Initialized data on level: 1
+ [ 11-13-2026  01:47:06.989 ] [gr_initNewLevelCallback] GC fill: 1
+ [ 11-13-2026  01:47:06.989 ] [Driver_evolveAll]: Entering evolution loop
+ [ 11-13-2026  01:47:06.989 ] [Driver_evolveAll] start-time: 0.0000000000000E+00
+ INFO: Grid_fillGuardCells is ignoring masking.
+ [ 11-13-2026  01:47:35.430 ] [Driver_evolveAll] end-time: 1.4999999999999E+00
+ [ 11-13-2026  01:47:35.430 ] [Driver_evolveAll]: Exiting evolution loop
+ ==============================================================================
+ perf_summary: code performance summary for process            0
+                      beginning : 11-13-2026  01:47:06
+                         ending : 11-13-2026  01:47:35
+   seconds in monitoring period :               28.449
+      number of evolution steps :                 3000
+ ------------------------------------------------------------------------------
+ accounting unit                       time sec  num calls   secs avg  time pct
+ ------------------------------------------------------------------------------
+ initialization                          0.008      1           0.008     0.027
+  gr_multigridAmrexInit                  0.000      1           0.000     0.000
+ evolution                              28.440  12001           0.002    99.968
+  guardcell internal                     1.875  18001           0.000     6.589
+   amr_guardcell                         1.862  18001           0.000     6.543
+    gc unk                               1.037  15001           0.000     3.643
+    gc facevars                          0.817   9001           0.000     2.870
+  Multiphase_reInitGridVars              0.016   6000           0.000     0.055
+  IncompNS_reInitGridVars                0.032   6000           0.000     0.113
+  Multiphase_setFluidProps               0.108   6000           0.000     0.380
+  Multiphase_setPressureJum              0.013   6000           0.000     0.045
+  IncompNS_advection                     0.283   6000           0.000     0.994
+  IncompNS_diffusion                     0.022   6000           0.000     0.077
+  IncompNS_predictor                     0.030   6000           0.000     0.107
+  IncompNS_setupPoisson                  0.020   6000           0.000     0.071
+  Grid_solvePoisson                     23.143   3000           0.008    81.347
+  IncompNS_corrector                     0.018   6000           0.000     0.064
+  Multiphase_advection                   0.135   6000           0.000     0.475
+  Multiphase_solve                       0.005   6000           0.000     0.019
+  Multiphase_redistance                  0.069  12000           0.000     0.242
+  IO_output                              0.001   3000           0.000     0.005
+  io                                     0.001   3000           0.000     0.004
+  Grid_updateRefinement                  0.103   1500           0.000     0.363
+ ==============================================================================
+ ==============================================================================
+ perf_summary: code performance summary statistics
+                      beginning : 11-13-2026  01:47:06
+                         ending : 11-13-2026  01:47:35
+   seconds in monitoring period :               28.449
+      number of evolution steps :                 3000
+ ------------------------------------------------------------------------------
+ accounting unit                  max/proc (s)  min/proc (s) avg/proc (s)   num calls
+ ------------------------------------------------------------------------------
+ initialization                          0.008         0.008        0.008           1
+  gr_multigridAmrexInit                  0.000         0.000        0.000           1
+ evolution                              28.441        28.440       28.440       12001
+  guardcell internal                     5.265         1.875        3.133       18001
+   amr_guardcell                         5.252         1.862        3.121       18001
+    gc unk                               4.467         1.037        2.313       15001
+    gc facevars                          0.817         0.777        0.799        9001
+  Multiphase_reInitGridVars              0.016         0.016        0.016        6000
+  IncompNS_reInitGridVars                0.032         0.032        0.032        6000
+  Multiphase_setFluidProps               0.123         0.108        0.116        6000
+  Multiphase_setPressureJum              0.015         0.013        0.013        6000
+  IncompNS_advection                     0.342         0.283        0.317        6000
+  IncompNS_diffusion                     0.028         0.022        0.025        6000
+  IncompNS_predictor                     0.032         0.030        0.031        6000
+  IncompNS_setupPoisson                  0.021         0.020        0.021        6000
+  Grid_solvePoisson                     23.143        19.652       21.830        3000
+  IncompNS_corrector                     0.018         0.017        0.018        6000
+  Multiphase_advection                   0.142         0.135        0.139        6000
+  Multiphase_solve                       0.006         0.005        0.005        6000
+  Multiphase_redistance                  0.077         0.069        0.073       12000
+  IO_output                              0.001         0.001        0.001        3000
+  io                                     0.001         0.001        0.001        3000
+  Grid_updateRefinement                  0.158         0.095        0.119        1500
+ ==============================================================================
+ [ 11-13-2026  01:47:35.432 ] LOGFILE_END: FLASH run complete.

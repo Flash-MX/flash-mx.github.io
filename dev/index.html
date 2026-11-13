@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev – Flash-MX</title><style>
+:root{--bg:#f0f4f8;--surface:#fff;--border:#d0d7de;--text:#1f2329;--muted:#57606a;--primary:#1565a0;
+--green:#d4edda;--yellow:#fff3cd;--red:#f8d7da}
+@media (prefers-color-scheme:dark){:root{--bg:#10151b;--surface:#1a212a;--border:#2f3a46;--text:#e6edf3;
+--muted:#9aa7b4;--primary:#6cb2eb;--green:#1e4d2b;--yellow:#5a4a14;--red:#5c2227}}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);
+color:var(--text);margin:0;padding:1.5rem 2rem;line-height:1.5}
+a{color:var(--primary)} h1{margin:.2rem 0 .5rem} h2{margin:0 0 .25rem} h3{margin:.8rem 0 .2rem;color:var(--muted);font-size:1rem}
+nav{display:flex;gap:1.25rem;margin-bottom:1.25rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.25rem}
+.meta,.note{color:var(--muted);font-size:.9rem} .note{font-style:italic}
+table{border-collapse:collapse;margin:.3rem 0} th,td{border:1px solid var(--border);padding:.3rem .7rem;text-align:left}
+details{margin:.3rem 0} summary{cursor:pointer} ul.artifacts{margin:.2rem 0;padding-left:1.2rem}
+td.green{background:var(--green)} td.yellow{background:var(--yellow)} td.red{background:var(--red)}
+</style></head><body>
+<nav><a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="index.html">Dev</a></nav>
+<h1>Development status</h1>
+<p>Latest automated test-suite run on each branch, and the last fully successful run when the latest did not pass.</p>
+<div class="cards">
+<div class="card">
+<h2>main</h2>
+<h3>Latest run</h3>
+<div class="meta">container &middot; invocation <a href="main/latest/invocations/2026-11-13.html">2026-11-13</a></div>
+<table><tr><th>Overall</th><th>Passed</th><th>Warnings</th><th>Failed</th><th>Total</th></tr>
+<tr><td class="green">✅</td><td>10</td><td>0</td><td>0</td><td>10</td></tr></table>
+<div class="meta">commit <a href="https://github.com/Flash-MX/Flash-MX/commit/5db4254f8cedf8fc56b1c874abd20f0b55842303"><code>5db4254f</code></a> &middot; <a href="https://github.com/Flash-MX/Flash-MX/actions/runs/43345500521">workflow run</a></div>
+<details><summary class="meta">Full outputs (flash_output, HDF5 files, logs) &ndash; GitHub artifacts, sign-in required</summary>
+<ul class="artifacts"><li><a href="https://github.com/Flash-MX/Flash-MX/actions/runs/43345500521/artifacts/14001774828">TestResults</a> <span class="meta">(275.8 MB, available until 2027-02-11)</span></li></ul></details>
+<p><a href="main/latest/index.html">Run details &rarr;</a></p>
+<p class="note">The latest run is also the last successful run.</p>
+</div>
+<div class="card">
+<h2>staged</h2>
+<h3>Latest run</h3>
+<div class="meta">container &middot; invocation <a href="staged/latest/invocations/2026-11-13.html">2026-11-13</a></div>
+<table><tr><th>Overall</th><th>Passed</th><th>Warnings</th><th>Failed</th><th>Total</th></tr>
+<tr><td class="green">✅</td><td>10</td><td>0</td><td>0</td><td>10</td></tr></table>
+<div class="meta">commit <a href="https://github.com/Flash-MX/Flash-MX/commit/9591691b6dd4a25194ea1b3b8ee34028acd63240"><code>9591691b</code></a> &middot; <a href="https://github.com/Flash-MX/Flash-MX/actions/runs/43343633309">workflow run</a></div>
+<details><summary class="meta">Full outputs (flash_output, HDF5 files, logs) &ndash; GitHub artifacts, sign-in required</summary>
+<ul class="artifacts"><li><a href="https://github.com/Flash-MX/Flash-MX/actions/runs/43343633309/artifacts/14000279580">TestResults</a> <span class="meta">(275.8 MB, available until 2027-02-11)</span></li></ul></details>
+<p><a href="staged/latest/index.html">Run details &rarr;</a></p>
+<p class="note">The latest run is also the last successful run.</p>
+</div>
+</div></body></html>

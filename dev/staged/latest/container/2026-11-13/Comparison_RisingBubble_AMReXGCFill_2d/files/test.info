@@ -1,0 +1,8 @@
+container/Comparison/RisingBubble/AMReXGCFill/2d
+
+setupName: incompFlow/RisingBubble
+nodeName: Comparison/RisingBubble/AMReXGCFill/2d
+setupOptions: -auto -2d -nxb=16 -nyb=16 +amrex +incomp -maxblocks=100
+numProcs: 3
+parfiles: <pathToSimulations>/incompFlow/RisingBubble/tests/test_gcfill.par
+shortPathToBenchmark: <siteDir>/2026-06-20/<buildDir>/<runDir>/<chkMax>

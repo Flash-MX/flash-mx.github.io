@@ -1,0 +1,111 @@
+/home/lib/amrex/2D/include/AMReX_Version.H:9:0:
+
+    9 | #endif // AMREX_VERSION_H_
+      | 
+Warning: extra tokens at end of #endif directive
+IncompNS_getScalarProp.F90:57:11:
+
+   57 |    value = .false.
+      |           1
+Warning: Extension: Conversion from LOGICAL(4) to INTEGER(4) at (1)
+Grid_smoothVar.F90:267:28:
+
+  267 |            s(i, j, k) = sval
+      |                            ^
+Warning: ‘sval’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+findWords.F90:66:49:
+
+   66 |   logical              :: is_delimiter, is_symbol
+      |                                                 ^
+Warning: ‘is_symbol’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+findWords.F90:66:38:
+
+   66 |   logical              :: is_delimiter, is_symbol
+      |                                      ^
+Warning: ‘is_delimiter’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_mpi_type.c: In function ‘io_mpi_type_primitive’:
+io_mpi_type.c:24:10: warning: ‘mpiType’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   24 |   return mpiType;
+      |          ^~~~~~~
+io_h5_type.c: In function ‘io_h5_type_hid_primitive’:
+io_h5_type.c:25:10: warning: ‘hType’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   25 |   return hType;
+      |          ^~~~~
+ut_sys_mem_usage.c: In function ‘ut_sys_mem_usage_’:
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+   48 |     ret = fscanf(selfFile,"%*d %*s %*c %*d %*d %*d %*d %*d %*lu %*lu %*lu %*lu %*lu %*lu %*lu %*ld %*ld %*ld %*ld %*ld %*ld %*lu %lu %ld %*lu ", &vsize, &rss);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+ut_sys_mem_usage.c:48:27: warning: use of assignment suppression and length modifier together in gnu_scanf format [-Wformat=]
+io_xfer_cont_slab.c: In function ‘io_xfer_cont_slab’:
+io_xfer_cont_slab.c:81:9: warning: ‘err’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   81 |   *pErr = err;
+      |   ~~~~~~^~~~~
+RuntimeParameters_init.F90:137:9:
+
+  137 |      if (useParfile) then
+      |         ^
+Warning: ‘useparfile’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Grid_getCellCoords.F90:201:59:
+
+  201 |           coordinates(i) = x0 + (lo(axis) + i - shift) * dx
+      |                                                           ^
+Warning: ‘shift’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Grid_getCellCoords_1drange.F90:201:54:
+
+  201 |           coordinates(i) = x0 + (slo + i - shift) * dx
+      |                                                      ^
+Warning: ‘shift’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+gr_markInRadiusForCallback.F90:180:12:
+
+  180 |         if (dist2 <= radius**2) then
+      |            ^
+Warning: ‘dist2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Grid_getCellFaceAreas.F90:87:39:
+
+   87 |                   areas(i, j, k) = area
+      |                                       ^
+Warning: ‘area’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:71:47:
+
+   71 |    real, allocatable, dimension(:, :) :: Deltas
+      |                                               ^
+Warning: ‘deltas.dim[1].stride’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:290:47:
+
+  290 |             MtrMax(a, b) = maxval(Deltas(:, a))
+      |                                               ^
+Warning: ‘deltas.dim[0].ubound’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:71:47:
+
+   71 |    real, allocatable, dimension(:, :) :: Deltas
+      |                                               ^
+Warning: ‘deltas.offset’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:289:55:
+
+  289 |             CrdMin(a, b) = minval(Coords(1:d, :, b, a))
+      |                                                       ^
+Warning: ‘coords.dim[1].ubound’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:171:100:
+
+  171 |             Coords(1:NXB, offset + 1:offset + lnblocks, 1:3, IAXIS) = reshape(iBuff, (/NXB, lnblocks, 3/))
+      |                                                                                                    ^
+Warning: ‘coords.offset’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:171:100: Warning: ‘coords.dim[3].stride’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+io_writeGrid.F90:70:53:
+
+   70 |    real, allocatable, dimension(:, :, :, :) :: Coords
+      |                                                     ^
+Warning: ‘coords.dim[2].stride’ may be used uninitialized in this function [-Wmaybe-uninitialized]
