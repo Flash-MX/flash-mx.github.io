@@ -1,0 +1,1024 @@
+ RuntimeParameters_read:  ignoring unknown parameter "gr_hyprePrintSolveInfo"...
+ RuntimeParameters_read:  ignoring unknown parameter "gr_hyprePcType"...
+ RuntimeParameters_read:  ignoring unknown parameter "gr_hypreSolverType"...
+ RuntimeParameters_read:  ignoring unknown parameter "gr_hypreRelTol"...
+ RuntimeParameters_read:  ignoring unknown parameter "gr_hypreFloor"...
+ [gr_amrexInit] Starting
+ The AMReX library was not configured with Bittree. The gr_amrexUseBittree feature will not be available to Flash-X. This may result in performance degradation.
+Initializing AMReX (23.11)...
+MPI initialized with 4 MPI processes
+MPI initialized with thread support level 0
+AMReX (23.11) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+ [gr_amrexInit] Finished
+ WARNING : Adaptive Grid did not find any refinement variables
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy
+      1             0.016           0.016
+      2             0.008           0.008
+ MaterialProperties initialized
+Creating new distribution map on level: 0
+Created and initialized         20 blocks on level 1
+Creating new distribution map on level: 1
+Created and initialized         80 blocks on level 2
+ gr_amrexMG_composite_solve   = T
+ gr_amrexMG_max_iter          =         200
+ gr_amrexMG_linop_maxorder    =           2
+ gr_amrexMG_Tol               =   1.0000000000000000E-013
+  Finished with Grid_initDomain, no restart
+ ins_cfl   =  0.29999999999999999     
+ ins_isgs  =           0
+ ins_invReynolds =   2.0000000000000000E-003
+ ins_sigma =  0.20000000000000001     
+ ins_dtSpec=   1.0000000000000000E-002
+ ins_velProlongMethod=           1
+ ins_rhoGas=   1.0000000000000000     
+ ins_muGas=   1.0000000000000000     
+ ins_inflowVelScale=   1.0000000000000000     
+ ins_intSchm=           2
+ ins_advSchm=           2
+ ins_prescoeff=   0.0000000000000000     
+ IncompNS: Pressure Boundary Conditions
+ LOW-HIGH,AXIS=           1           1
+ ins_domainBC(ibound,idimn), ins_pressureBC(ibound,idimn) =        -135           1
+ LOW-HIGH,AXIS=           2           1
+ ins_domainBC(ibound,idimn), ins_pressureBC(ibound,idimn) =        -135           1
+ LOW-HIGH,AXIS=           1           2
+ ins_domainBC(ibound,idimn), ins_pressureBC(ibound,idimn) =         -21           3
+ LOW-HIGH,AXIS=           2           2
+ ins_domainBC(ibound,idimn), ins_pressureBC(ibound,idimn) =         -21           3
+ in_sink =   -1.0000000000000000     
+ in_buffer =   1.0000000000000000     
+ in_growthRate =   4.0000000000000000     
+ Inlet Flag Low  =           0           0           0
+ Inlet Flag High =           0           0           0
+ out_sink=  -1.0000000000000000     
+ out_buffer=  0.10000000000000001     
+ out_growthRate=   4.0000000000000000     
+ out_velRefScale=   1.0000000000000000     
+ Outlet Flag Low  =           0           0           0
+ Outlet Flag High =           0           0           0
+ arrays freed
+ *** Wrote checkpoint file to flashx_hdf5_chk_0000 ****
+ *** Wrote grid data to flashx_hdf5_grd_0000 ****
+ *** Wrote plotfile to flashx_hdf5_plt_cnt_0000 ****
+ Initial plotfile written
+ Driver init all done
+       n          t         dt  (         x,          y,          z) |  dt_INS    CFL      
+       1 0.0000E+00 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.001618315 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.769600       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     1, TimeStep=   0.23437500E-02, SimTime=   0.23437500E-02
+ ###############################################################################
+       n          t         dt  (         x,          y,          z) |  dt_INS    CFL      
+       1 2.3437E-03 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000829653 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.695626       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     2, TimeStep=   0.23437500E-02, SimTime=   0.46875000E-02
+ ###############################################################################
+       2 4.6875E-03 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000822533 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.617618       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     3, TimeStep=   0.23437500E-02, SimTime=   0.70312500E-02
+ ###############################################################################
+       3 7.0312E-03 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000803704 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.556751       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     4, TimeStep=   0.23437500E-02, SimTime=   0.93750000E-02
+ ###############################################################################
+       4 9.3750E-03 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000816324 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.505940       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     5, TimeStep=   0.23437500E-02, SimTime=   0.11718750E-01
+ ###############################################################################
+       5 1.1719E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000811266 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.463795       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     6, TimeStep=   0.23437500E-02, SimTime=   0.14062500E-01
+ ###############################################################################
+       6 1.4063E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000829353 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.428470       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     7, TimeStep=   0.23437500E-02, SimTime=   0.16406250E-01
+ ###############################################################################
+       7 1.6406E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.00083405 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.398657       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     8, TimeStep=   0.23437500E-02, SimTime=   0.18750000E-01
+ ###############################################################################
+       8 1.8750E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.00083412 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.373297       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+     9, TimeStep=   0.23437500E-02, SimTime=   0.21093750E-01
+ ###############################################################################
+       9 2.1094E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000876194 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.351558       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    10, TimeStep=   0.23437500E-02, SimTime=   0.23437500E-01
+ ###############################################################################
+      10 2.3437E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000858878 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.332781       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    11, TimeStep=   0.23437500E-02, SimTime=   0.25781250E-01
+ ###############################################################################
+      11 2.5781E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000854962 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.316439       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    12, TimeStep=   0.23437500E-02, SimTime=   0.28125000E-01
+ ###############################################################################
+      12 2.8125E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000881332 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.302112       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    13, TimeStep=   0.23437500E-02, SimTime=   0.30468750E-01
+ ###############################################################################
+      13 3.0469E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000862793 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.289461       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    14, TimeStep=   0.23437500E-02, SimTime=   0.32812500E-01
+ ###############################################################################
+      14 3.2812E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000948283 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.278214       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    15, TimeStep=   0.23437500E-02, SimTime=   0.35156250E-01
+ ###############################################################################
+      15 3.5156E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.001099471 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.268152       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    16, TimeStep=   0.23437500E-02, SimTime=   0.37500000E-01
+ ###############################################################################
+      16 3.7500E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000942594 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.259092       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    17, TimeStep=   0.23437500E-02, SimTime=   0.39843750E-01
+ ###############################################################################
+      17 3.9844E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000946941 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.250890       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    18, TimeStep=   0.23437500E-02, SimTime=   0.42187500E-01
+ ###############################################################################
+      18 4.2187E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000917126 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.243423       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    19, TimeStep=   0.23437500E-02, SimTime=   0.44531250E-01
+ ###############################################################################
+      19 4.4531E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000917626 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.236592       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    20, TimeStep=   0.23437500E-02, SimTime=   0.46875000E-01
+ ###############################################################################
+      20 4.6875E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000908272 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.230314       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    21, TimeStep=   0.23437500E-02, SimTime=   0.49218750E-01
+ ###############################################################################
+      21 4.9219E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000907461 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.224519       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    22, TimeStep=   0.23437500E-02, SimTime=   0.51562500E-01
+ ###############################################################################
+      22 5.1562E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000897115 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.219148       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    23, TimeStep=   0.23437500E-02, SimTime=   0.53906250E-01
+ ###############################################################################
+      23 5.3906E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.00084719 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.214153       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    24, TimeStep=   0.23437500E-02, SimTime=   0.56250000E-01
+ ###############################################################################
+      24 5.6250E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000925579 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.209492       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    25, TimeStep=   0.23437500E-02, SimTime=   0.58593750E-01
+ ###############################################################################
+      25 5.8594E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000908522 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.205128       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    26, TimeStep=   0.23437500E-02, SimTime=   0.60937500E-01
+ ###############################################################################
+      26 6.0937E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000887631 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.201032       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    27, TimeStep=   0.23437500E-02, SimTime=   0.63281250E-01
+ ###############################################################################
+      27 6.3281E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.00093979 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.197176       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    28, TimeStep=   0.23437500E-02, SimTime=   0.65625000E-01
+ ###############################################################################
+      28 6.5625E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000909524 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.193538       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    29, TimeStep=   0.23437500E-02, SimTime=   0.67968750E-01
+ ###############################################################################
+      29 6.7969E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000908793 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.190097       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    30, TimeStep=   0.23437500E-02, SimTime=   0.70312500E-01
+ ###############################################################################
+      30 7.0312E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000879249 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.186837       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    31, TimeStep=   0.23437500E-02, SimTime=   0.72656250E-01
+ ###############################################################################
+      31 7.2656E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000920431 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.183741       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    32, TimeStep=   0.23437500E-02, SimTime=   0.75000000E-01
+ ###############################################################################
+      32 7.5000E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.0009599 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.180796       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    33, TimeStep=   0.23437500E-02, SimTime=   0.77343750E-01
+ ###############################################################################
+      33 7.7344E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000901522 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.177991       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    34, TimeStep=   0.23437500E-02, SimTime=   0.79687500E-01
+ ###############################################################################
+      34 7.9688E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000837746 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.175313       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    35, TimeStep=   0.23437500E-02, SimTime=   0.82031250E-01
+ ###############################################################################
+      35 8.2031E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000838057 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.172754       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    36, TimeStep=   0.23437500E-02, SimTime=   0.84375000E-01
+ ###############################################################################
+      36 8.4375E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.00082013 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.170305       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    37, TimeStep=   0.23437500E-02, SimTime=   0.86718750E-01
+ ###############################################################################
+      37 8.6719E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000824095 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.167959       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    38, TimeStep=   0.23437500E-02, SimTime=   0.89062500E-01
+ ###############################################################################
+      38 8.9063E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000855613 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.165707       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    39, TimeStep=   0.23437500E-02, SimTime=   0.91406250E-01
+ ###############################################################################
+      39 9.1406E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000855983 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.163545       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    40, TimeStep=   0.23437500E-02, SimTime=   0.93750000E-01
+ ###############################################################################
+      40 9.3750E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000921482 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.161465       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    41, TimeStep=   0.23437500E-02, SimTime=   0.96093750E-01
+ ###############################################################################
+      41 9.6094E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000872488 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.159464       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    42, TimeStep=   0.23437500E-02, SimTime=   0.98437500E-01
+ ###############################################################################
+      42 9.8438E-02 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000888272 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.157535       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    43, TimeStep=   0.23437500E-02, SimTime=   0.10078125    
+ ###############################################################################
+      43 1.0078E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.0009729 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.155675       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    44, TimeStep=   0.23437500E-02, SimTime=   0.10312500    
+ ###############################################################################
+      44 1.0313E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000916335 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.153880       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    45, TimeStep=   0.23437500E-02, SimTime=   0.10546875    
+ ###############################################################################
+      45 1.0547E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000908523 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.152146       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    46, TimeStep=   0.23437500E-02, SimTime=   0.10781250    
+ ###############################################################################
+      46 1.0781E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000949614 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.150470       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    47, TimeStep=   0.23437500E-02, SimTime=   0.11015625    
+ ###############################################################################
+      47 1.1016E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000914672 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.148848       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    48, TimeStep=   0.23437500E-02, SimTime=   0.11250000    
+ ###############################################################################
+      48 1.1250E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000855983 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.147278       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    49, TimeStep=   0.23437500E-02, SimTime=   0.11484375    
+ ###############################################################################
+      49 1.1484E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ Outlet Velocity LOW,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Outlet Velocity HIGH,   0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ Calling multigrid solve, maxlev           1
+MLMG: # of AMR levels: 2
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 0
+MLMG: Initial residual (resid0) = 0
+MLMG: No iterations needed
+MLMG: Timers: Solve = 0.000952319 Iter = 0 Bottom = 0
+   0.0000000000000000     
+  
+          Min , Max  U =  0.145756       1.00000    
+          Min , Max  V =   0.00000       0.00000    
+          Min , Max  P =   0.00000       0.00000    
+ Min , Max  Divergence =   0.00000       0.00000    
+  
+    50, TimeStep=   0.23437500E-02, SimTime=   0.11718750    
+ ###############################################################################
+      50 1.1719E-01 2.3437E-03  ( 8.203E-02,  8.203E-02,   0.00    ) |  2.344E-03 1.000E+10
+ *** Wrote checkpoint file to flashx_hdf5_chk_0001 ****
+ *** Wrote plotfile to flashx_forced_hdf5_plt_cnt_0000 ****
+ [gr_amrexFinalize] Finalizing
+AMReX (23.11) finalized

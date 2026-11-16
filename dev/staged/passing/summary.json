@@ -1,0 +1,12 @@
+[
+  {
+    "site": "container",
+    "invocation": "2026-11-13",
+    "colour": "green",
+    "counts": {
+      "green": 10,
+      "yellow": 0,
+      "red": 0
+    }
+  }
+]

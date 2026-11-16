@@ -1,0 +1,9 @@
+container/Comparison/incompFlow/PoolBoiling/2d/AMReXGCFill
+
+setupName: incompFlow/PoolBoiling
+nodeName: Comparison/incompFlow/PoolBoiling/2d/AMReXGCFill
+setupOptions: -auto -maxblocks=100 +amrex +parallelIO +incomp -2d -nxb=16 -nyb=16
+numProcs: 4
+parfiles: <pathToSimulations>/incompFlow/PoolBoiling/tests/test_gcfill.par
+transfers: source/Simulation/SimulationMain/incompFlow/PoolBoiling/tests/single_bubble_hdf5_htr_0001
+shortPathToBenchmark: <siteDir>/2026-11-12/<buildDir>/<runDir>/<chkMax>

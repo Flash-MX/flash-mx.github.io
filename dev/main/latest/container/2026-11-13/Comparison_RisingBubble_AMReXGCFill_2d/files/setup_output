@@ -1,0 +1,77 @@
+Processing Shortcut file: /home/mount/FlashX/bin/setup_shortcuts.txt
+checking for needed files and directories
+    using site directory for site container
+generating default Units file
+    Driver/DriverMain/Incomp
+    Grid/GridBoundaryConditions
+    Grid/GridMain/AMR/Amrex/Incomp
+    Grid/GridMain/AMR/Amrex/levelFlux
+    Grid/GridSolvers/AmrexMultigridSolver
+    Grid/localAPI
+    IO/IOMain/hdf5/AM
+    IO/IOMain/hdf5/serial/AM
+    IO/IOMain/hdf5/writeGrid/AM
+    IO/localAPI
+    RuntimeParameters/RuntimeParametersMain
+    Simulation/SimulationMain/incompFlow/RisingBubble
+    TimeAdvance/TimeAdvanceMain
+    flashUtilities/contiguousConversion
+    flashUtilities/general
+    flashUtilities/interpolation/oneDim
+    flashUtilities/nameValueLL
+    flashUtilities/system/memoryUsage/legacy
+    monitors/Logfile/LogfileMain
+    monitors/Timers/TimersMain/MPINative
+    numericalTools/Stencils/StencilsAdvection
+    numericalTools/Stencils/StencilsDiffusion
+    numericalTools/Stencils/StencilsLevelset
+    numericalTools/Stencils/StencilsMain
+    numericalTools/Stencils/StencilsTemporal
+    physics/IncompNS/IncompNSExtras
+    physics/IncompNS/IncompNSMain/varDens/presPoisson
+    physics/IncompNS/localAPI
+    physics/Multiphase/MultiphaseMain
+    physics/Multiphase/localAPI
+    physics/sourceTerms/Inlet/InletMain
+    physics/sourceTerms/Outlet/OutletMain/phaseForcing
+    physics/sourceTerms/Outlet/localAPI
+scanning /home/mount/FlashX/object/Units file for included units
+    Driver/DriverMain/Incomp
+    Grid/GridBoundaryConditions
+    Grid/GridMain/AMR/Amrex/Incomp
+    Grid/GridMain/AMR/Amrex/levelFlux
+    Grid/GridSolvers/AmrexMultigridSolver
+    Grid/localAPI
+    IO/IOMain/hdf5/AM
+    IO/IOMain/hdf5/serial/AM
+    IO/IOMain/hdf5/writeGrid/AM
+    IO/localAPI
+    RuntimeParameters/RuntimeParametersMain
+    Simulation/SimulationMain/incompFlow/RisingBubble
+    TimeAdvance/TimeAdvanceMain
+    flashUtilities/contiguousConversion
+    flashUtilities/general
+    flashUtilities/interpolation/oneDim
+    flashUtilities/nameValueLL
+    flashUtilities/system/memoryUsage/legacy
+    monitors/Logfile/LogfileMain
+    monitors/Timers/TimersMain/MPINative
+    numericalTools/Stencils/StencilsAdvection
+    numericalTools/Stencils/StencilsDiffusion
+    numericalTools/Stencils/StencilsLevelset
+    numericalTools/Stencils/StencilsMain
+    numericalTools/Stencils/StencilsTemporal
+    physics/IncompNS/IncompNSExtras
+    physics/IncompNS/IncompNSMain/varDens/presPoisson
+    physics/IncompNS/localAPI
+    physics/Multiphase/MultiphaseMain
+    physics/Multiphase/localAPI
+    physics/sourceTerms/Inlet/InletMain
+    physics/sourceTerms/Outlet/OutletMain/phaseForcing
+    physics/sourceTerms/Outlet/localAPI
+Computing default values for options not specified on command line
+Using Makefile.h: /home/mount/FlashX/sites/container/Makefile.h
+Generating variants [''] for files in Driver/DriverMain/Incomp
+generating Makefile
+Copying data files: 1 copied
+SUCCESS

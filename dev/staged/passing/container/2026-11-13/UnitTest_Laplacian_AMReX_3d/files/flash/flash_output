@@ -1,0 +1,87 @@
+ [gr_amrexInit] Starting
+ The AMReX library was not configured with Bittree. The gr_amrexUseBittree feature will not be available to Flash-X. This may result in performance degradation.
+Initializing AMReX (23.11)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+AMReX (23.11) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+ [gr_amrexInit] Finished
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy              dz
+      1             0.062           0.062           0.062
+      2             0.031           0.031           0.031
+      3             0.016           0.016           0.016
+ MaterialProperties initialized
+Creating new distribution map on level: 0
+Created and initialized          8 blocks on level 1
+Creating new distribution map on level: 1
+Created and initialized         64 blocks on level 2
+Creating new distribution map on level: 2
+Created and initialized        512 blocks on level 3
+ gr_amrexMG_composite_solve   = F
+ gr_amrexMG_max_iter          =         100
+ gr_amrexMG_linop_maxorder    =           2
+ gr_amrexMG_Tol               =   1.0000000000000000E-010
+  Finished with Grid_initDomain, no restart
+ arrays freed
+ Initial plotfile written
+ Driver init all done
+ Preparing to call Grid_unitTest
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 4
+MLMG: Initial rhs               = 297.44514
+MLMG: Initial residual (resid0) = 297.44514
+MLMG: Iteration   1 Fine resid/bnorm = 0.0551230442
+MLMG: Iteration   2 Fine resid/bnorm = 0.0006634532283
+MLMG: Iteration   3 Fine resid/bnorm = 1.666176015e-05
+MLMG: Iteration   4 Fine resid/bnorm = 3.725369383e-07
+MLMG: Iteration   5 Fine resid/bnorm = 9.19320219e-09
+MLMG: Iteration   6 Fine resid/bnorm = 2.939882831e-10
+MLMG: Iteration   7 Fine resid/bnorm = 9.874997395e-12
+MLMG: Final Iter. 7 resid, resid/bnorm = 2.937269983e-09, 9.874997395e-12
+MLMG: Timers: Solve = 0.002369209 Iter = 0.002056457 Bottom = 6.4277e-05
+   2.9372699827945326E-009
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 5
+MLMG: Initial rhs               = 340.1369609
+MLMG: Initial residual (resid0) = 340.1369609
+MLMG: Iteration   1 Fine resid/bnorm = 0.1681155594
+MLMG: Iteration   2 Fine resid/bnorm = 0.003645854824
+MLMG: Iteration   3 Fine resid/bnorm = 5.65909101e-05
+MLMG: Iteration   4 Fine resid/bnorm = 1.81325644e-06
+MLMG: Iteration   5 Fine resid/bnorm = 5.772136221e-08
+MLMG: Iteration   6 Fine resid/bnorm = 1.785092297e-09
+MLMG: Iteration   7 Fine resid/bnorm = 6.960364525e-11
+MLMG: Final Iter. 7 resid, resid/bnorm = 2.367477236e-08, 6.960364525e-11
+MLMG: Timers: Solve = 0.017701122 Iter = 0.015913852 Bottom = 6.2304e-05
+   2.3674772364756791E-008
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 351.4683386
+MLMG: Initial residual (resid0) = 351.4683386
+MLMG: Iteration   1 Fine resid/bnorm = 0.4278000984
+MLMG: Iteration   2 Fine resid/bnorm = 0.01194884562
+MLMG: Iteration   3 Fine resid/bnorm = 0.0003799086954
+MLMG: Iteration   4 Fine resid/bnorm = 1.539239567e-05
+MLMG: Iteration   5 Fine resid/bnorm = 6.710899325e-07
+MLMG: Iteration   6 Fine resid/bnorm = 3.285947757e-08
+MLMG: Iteration   7 Fine resid/bnorm = 1.739867589e-09
+MLMG: Iteration   8 Fine resid/bnorm = 9.653241353e-11
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.392808701e-08, 9.653241353e-11
+MLMG: Timers: Solve = 0.207515325 Iter = 0.189949798 Bottom = 0.000186513
+   3.3928087006529495E-008
+  
+ Laplacian Solver time =   0.25200000000000000       sec.
+ INFO: Grid_fillGuardCells is ignoring masking.
+  
+ Mean Analytical, Numerical Sol=  0.14636729E-17 -0.20057740E-17
+ ||Phi - PhiAnalytical||inf =  0.29175383E-02
+ ||Phi - PhiAnalytical||2   =  0.10415115E-02
+  Total Volume =   1.0000000000000000     
+  Total Number of Tiles on Leaf Blocks=         512
+ All tests PASSED
+  
+ Returned from Grid_unitTest
+ [gr_amrexFinalize] Finalizing
+AMReX (23.11) finalized
