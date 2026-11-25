@@ -1,0 +1,7 @@
+container/UnitTest/Laplacian/AMReX/3d
+
+setupName: unitTest/Laplacian/Amrex
+nodeName: UnitTest/Laplacian/AMReX/3d
+setupOptions: -auto -3d +amrex +noio -maxblocks=1000
+numProcs: 1
+parfiles: <defaultParfile>

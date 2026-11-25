@@ -1,0 +1,7 @@
+container/UnitTest/incompFlow/ChanneFlow/2d/Periodic
+
+setupName: incompFlow/ChannelFlow
+nodeName: UnitTest/incompFlow/ChanneFlow/2d/Periodic
+setupOptions: -auto -maxblocks=100 +amrex +parallelIO -2d -nxb=16 -nyb=16 +incomp
+numProcs: 4
+parfiles: <pathToSimulations>/incompFlow/ChannelFlow/tests/test_periodic_bc.par
